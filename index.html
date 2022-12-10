@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="icon" href="images.png\search.jpg" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="try.js" defer></script>
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--header-->
+
+    <header>
+        
+        <button  class="light"onclick="lightmode()">lightmode</button>
+        <button class="dark" onclick="darkmode()">darkmode</button>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a id="h-1" href="https://mail.google.com/">Gmail</a>
+                </li>
+                <li>
+                    <a id="h-2" href="#">Images</a>
+                </li>
+                <li>
+                    <a id="h-3" href="advance.html">Advanced Search</a>
+
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+    <!--content-->
+    <section class="content-section">
+        <div class="content-wrapper">
+            <img  class="logo-img" src="images.png\download.png" alt="Google logo"/>
+            <form action="https://www.google.com/search">
+                <div class="search-bar">
+                       
+                    <span class="material-icons" id="c-1">search</span>
+                    <input id="c-2" style="flex-grow:1;border:none;font-size:16px;height:30px;margin-right:15px;"  type="text" name="q">
+                    <span id="c-3" class="material-icons">mic</span>
+                </div>
+                    <div class="search_buttons">
+                        <input id="c-4" class="google-btn" type="submit" value="Google Search">
+                        <input id="c-5" class="lucky-btn" type="submit" value="I'm Feeling Lucky">
+                    </div>
+                
+                
+            </form>
+             <div class="language">
+                <p id="c-6">Google offered in:  <a id="lan-9" href="https://www.google.co.in/setprefs?sig=0_bOraUVVE5JSmuHbgZW7547iMUsA%3D&amp;hl=hi&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwi9jIH37eT7AhUbTWwGHXXcAqYQ2ZgBCBA"> हिन्दी </a><a id="lan-8" href="https://www.google.co.in/setprefs?sig=0_bOraUVVE5JSmuHbgZW7547iMUsA%3D&amp;hl=bn&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwi9jIH37eT7AhUbTWwGHXXcAqYQ2ZgBCBE"> বাংলা </a><a id="lan-7" href="https://www.google.co.in/setprefs?sig=0_bOraUVVE5JSmuHbgZW7547iMUsA%3D&amp;hl=te&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwi9jIH37eT7AhUbTWwGHXXcAqYQ2ZgBCBI"> తెలుగు </a><a id="lan-6" href="https://www.google.co.in/setprefs?sig=0_bOraUVVE5JSmuHbgZW7547iMUsA%3D&amp;hl=mr&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwi9jIH37eT7AhUbTWwGHXXcAqYQ2ZgBCBM"> मराठी </a><a id="lan-5" href="https://www.google.co.in/setprefs?sig=0_bOraUVVE5JSmuHbgZW7547iMUsA%3D&amp;hl=ta&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwi9jIH37eT7AhUbTWwGHXXcAqYQ2ZgBCBQ"> தமிழ் </a><a id="lan-4" href="https://www.google.co.in/setprefs?sig=0_bOraUVVE5JSmuHbgZW7547iMUsA%3D&amp;hl=gu&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwi9jIH37eT7AhUbTWwGHXXcAqYQ2ZgBCBU"> ગુજરાતી </a><a id="lan-3" href="https://www.google.co.in/setprefs?sig=0_bOraUVVE5JSmuHbgZW7547iMUsA%3D&amp;hl=kn&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwi9jIH37eT7AhUbTWwGHXXcAqYQ2ZgBCBY"> ಕನ್ನಡ </a><a id="lan-2" href="https://www.google.co.in/setprefs?sig=0_bOraUVVE5JSmuHbgZW7547iMUsA%3D&amp;hl=ml&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwi9jIH37eT7AhUbTWwGHXXcAqYQ2ZgBCBc"> മലയാളം </a><a id="lan-1" href="https://www.google.co.in/setprefs?sig=0_bOraUVVE5JSmuHbgZW7547iMUsA%3D&amp;hl=pa&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwi9jIH37eT7AhUbTWwGHXXcAqYQ2ZgBCBg"> ਪੰਜਾਬੀ</a></p>
+             </div>
+        </div>
+        
+    </section>
+    <!--footer-->
+    <footer>
+        <div class=" footer-content upper-footer">
+            <p id="f-1">India</p>
+        </div>
+        <div class="footer-content lower-footer">
+            <ul class="lower-left-footer">
+                <li>
+                    <a id="f-2" href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+                </li>
+                <li>
+                    <a id="f-3" href="https://www.google.co.in/intl/en_in/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1" >Advertising</a>
+                    
+                </li>
+                <li>
+                    <a id="f-4" href="https://www.google.co.in/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+                </li>
+                <li>
+                    <a id="f-5" href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a>
+                </li>
+            </ul>
+            <ul class="lower-right-footer">
+                <li>
+                    <a id="f-6" href="https://policies.google.com/privacy?hl=en-IN&fg=1">Privacy</a>
+                </li>
+                <li>
+                    <a id="f-7" href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a>
+                </li>
+                <li>
+                    <a id="f-8" href="https://www.google.co.in/preferences?hl=en-IN&fg=1">Settings</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
