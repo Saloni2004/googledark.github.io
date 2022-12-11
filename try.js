@@ -1,162 +1,109 @@
-const toggle = document.getElementById('toggleDark');
 const body = document.querySelector('body');
-const h_1=document.querySelector('#h-1');
-const h_2=document.querySelector('#h-2');
-const h_3=document.querySelector('#h-3');
-const c_1=document.querySelector('#c-1');
-const c_2=document.querySelector('#c-2');
-const c_3=document.querySelector('#c-3');
-const c_4=document.querySelector('#c-4');
-const c_5=document.querySelector('#c-5');
-const c_6=document.querySelector('#c-6');
+const h=document.querySelectorAll('.h');
+const icons=document.querySelectorAll('.material-icons');
 const logo=document.querySelector(".logo-img");
-const lan_1=document.querySelector('#lan-1');
-const lan_2=document.querySelector('#lan-2');
-const lan_3=document.querySelector('#lan-3');
-const lan_4=document.querySelector('#lan-4');
-const lan_5=document.querySelector('#lan-5');
-const lan_6=document.querySelector('#lan-6');
-const lan_7=document.querySelector('#lan-7');
-const lan_8=document.querySelector('#lan-8');
-const lan_9=document.querySelector('#lan-9');
-const f_1=document.querySelector('#f-1');
-const f_2=document.querySelector('#f-2');
-const f_3=document.querySelector('#f-3');
-const f_4=document.querySelector('#f-4');
-const f_5=document.querySelector('#f-5');
-const f_6=document.querySelector('#f-6');
-const f_7=document.querySelector('#f-7');
-const f_8=document.querySelector('#f-8');
+const c_2=document.querySelector('#c-2');
+const btn_1=document.querySelector('#btn-1');
+const btn_2=document.querySelector('#btn-2');
+const c_6=document.querySelector('#c-6');
+const lan=document.querySelectorAll('.lan');
 const footer=document.querySelector('footer');
+const f=document.querySelectorAll('.f');
+
 
 function lightmode(){
     body.style.background='white';
-        h_1.style.color='black';
-        h_2.style.color='black';
-        h_3.style.color='black';
-        c_1.style.color='#9aa0a6';
-        c_2.style.color='#e8eaed';
-        c_3.style.color='#9aa0a6';
-        c_4.style.color='#3c4043';
-        c_5.style.color='#3c4043';
-        c_6.style.color='black';
-        h_1.style.transition='2s';
-        h_2.style.transition='2s';
-        h_3.style.transition='2s';
-        c_1.style.transition='2s';
-        c_2.style.transition='2s';
-        c_3.style.transition='2s';
-        c_4.style.transition='2s';
-        c_5.style.transition='2s';
-        c_6.style.transition='2s';
-        c_4.style.background='#f8f9fa';
-        c_5.style.background='#f8f9fa';
-        c_2.style.background='transparent';
-        logo.src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png";
-        logo.style.tranistion='2s';
-        lan_1.style.color='blue';
-        lan_2.style.color='blue';
-        lan_3.style.color='blue';
-        lan_4.style.color='blue';
-        lan_5.style.color='blue';
-        lan_6.style.color='blue';
-        lan_7.style.color='blue';
-        lan_8.style.color='blue';
-        lan_9.style.color='blue';
-        lan_1.style.tranistion='2s';
-        lan_2.style.tranistion='2s';
-        lan_3.style.tranistion='2s';
-        lan_4.style.tranistion='2s';
-        lan_5.style.tranistion='2s';
-        lan_6.style.tranistion='2s';
-        lan_7.style.tranistion='2s';
-        lan_8.style.tranistion='2s';
-        lan_9.style.tranistion='2s';
+    body.style.transition = '2s';
 
-        footer.style.background='#f2f2f2';
-        footer.style.tranistion='2s';
-        f_1.style.color='gray';
-        f_2.style.color='gray';
-        f_3.style.color='gray';
-        f_4.style.color='gray';
-        f_5.style.color='gary';
-        f_6.style.color='gray';
-        f_7.style.color='gray';
-        f_8.style.color='gray';
-        f_1.style.tranistion='2s';
-        f_2.style.tranistion='2s';
-        f_3.style.tranistion='2s';
-        f_4.style.tranistion='2s';
-        f_5.style.tranistion='2s';
-        f_6.style.tranistion='2s';
-        f_7.style.tranistion='2s';
-        f_8.style.tranistion='2s';
+    h.forEach(function(h){
+        h.style.color='black';
+        h.style.transition='2s';
+    })
 
-        body.style.transition = '2s';
+    icons.forEach(function(icons){
+        icons.style.color='#9aa0a6';
+        icons.style.transition='2s';
+    })
+
+    logo.src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png";
+    logo.style.tranistion='2s';
+
+    c_2.style.color='black';
+    c_2.style.transition='2s';
+    c_2.style.background='transparent';
+
+    btn_1.style.color='#3c4043';
+    btn_1.style.transition='2s';
+    btn_1.style.backgroundColor='#f8f9fa';
+
+    btn_2.style.color='#3c4043';
+    btn_2.style.transition='2s';
+    btn_2.style.backgroundColor='#f8f9fa';
+    
+     
+    c_6.style.color='black';
+    c_6.style.transition='2s';
+
+    lan.forEach(function(lan){
+        lan.style.color='blue';
+        lan.style.transition='2s';
+    })
+    
+    footer.style.background='#f2f2f2';
+    footer.style.transition='2s';
+
+    f.forEach(function(f){
+        f.style.color='gray';
+        f.style.transition='2s';
+    })   
 }
 
 function darkmode(){
     body.style.background='#2b2c2c';
-        h_1.style.color='white';
-        h_2.style.color='white';
-        h_3.style.color='white';
-        c_1.style.color='#9aa0a6';
-        c_2.style.color='#e8eaed';
-        c_3.style.color='#9aa0a6';
-        c_4.style.color='#e8eaed';
-        c_5.style.color='#e8eaed';
-        c_6.style.color='#f2f2f2';
-        h_1.style.transition='2s';
-        h_2.style.transition='2s';
-        h_3.style.transition='2s';
-        c_1.style.transition='2s';
-        c_2.style.transition='2s';
-        c_3.style.transition='2s';
-        c_4.style.transition='2s';
-        c_5.style.transition='2s';
-        c_6.style.transition='2s';
-        c_4.style.background='#303134';
-        c_5.style.background='#303134';
-        c_2.style.background='transparent';
-        logo.src="https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png";
-        logo.style.tranistion='2s';
-        lan_1.style.color='#8ab4f8';
-        lan_2.style.color='#8ab4f8';
-        lan_3.style.color='#8ab4f8';
-        lan_4.style.color='#8ab4f8';
-        lan_5.style.color='#8ab4f8';
-        lan_6.style.color='#8ab4f8';
-        lan_7.style.color='#8ab4f8';
-        lan_8.style.color='#8ab4f8';
-        lan_9.style.color='#8ab4f8';
-        lan_1.style.tranistion='2s';
-        lan_2.style.tranistion='2s';
-        lan_3.style.tranistion='2s';
-        lan_4.style.tranistion='2s';
-        lan_5.style.tranistion='2s';
-        lan_6.style.tranistion='2s';
-        lan_7.style.tranistion='2s';
-        lan_8.style.tranistion='2s';
-        lan_9.style.tranistion='2s';
+    body.style.transition='2s';
+    
+    
+    h.forEach(function(h){
+        h.style.color='white';
+        h.style.transition='2s';
+    })
 
-        footer.style.background='#202021';
-        footer.style.tranistion='2s';
-        f_1.style.color='#9aa0a6';
-        f_2.style.color='#999da2';
-        f_3.style.color='#999da2';
-        f_4.style.color='#999da2';
-        f_5.style.color='#999da2';
-        f_6.style.color='#999da2';
-        f_7.style.color='#999da2';
-        f_8.style.color='#999da2';
-        f_1.style.tranistion='2s';
-        f_2.style.tranistion='2s';
-        f_3.style.tranistion='2s';
-        f_4.style.tranistion='2s';
-        f_5style.tranistion='2s';
-        f_6.style.tranistion='2s';
-        f_7.style.tranistion='2s';
-        f_8.style.tranistion='2s';
+    icons.forEach(function(icons){
+        icons.style.color='#9aa0a6';
+        icons.style.transition='2s';
+    })
 
-        body.style.transition = '2s';
+    logo.src="https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png";
+    logo.style.transition='2s';
+
+    c_2.style.color='#e8eaed';
+    c_2.style.transition='2s';
+    c_2.style.background='transparent';
+
+    btn_1.style.color='#e8eaed';
+    btn_1.style.transition='2s';
+    btn_1.style.backgroundColor='#303134';
+    btn_1.style.border='1px solid #303134';
+
+    btn_2.style.color='#e8eaed';
+    btn_2.style.transition='2s';
+    btn_2.style.backgroundColor='#303134';
+    btn_2.style.border='1px solid #303134';
+
+     
+    c_6.style.color='#f2f2f2';
+    c_6.style.transition='2s';
+    
+    lan.forEach(function(lan){
+        lan.style.color='#8ab4f8';
+        lan.style.transition='2s';
+    })
+    
+    footer.style.background='#202021';
+    footer.style.transition='2s';
+
+    f.forEach(function(f){
+        f.style.color='#9aa0a6';
+        f.style.transition='2s';
+    })
 }
